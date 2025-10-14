@@ -1,8 +1,25 @@
 import React from 'react'
-
+import datos from './datos.js'
 const Productos = () => {
   return (
-    <div>Productos</div>
+      <div>
+          
+
+
+          {datos.map((producto) => {
+              return (<div key={producto.id}>
+                  <h2>{producto.nombre}</h2>
+              </div>)
+            
+            
+            
+          })}
+
+
+
+
+
+    </div>
   )
 }
 
