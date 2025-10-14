@@ -1,14 +1,26 @@
 import React from 'react'
 import datos from './datos.js'
+import ProductoItem from './ProductoItem/ProductoItem.jsx'
+import './productos.css'
 const Productos = () => {
   return (
-      <div>
+      <div className='productos'>
           
 
 
           {datos.map((producto) => {
               return (<div key={producto.id}>
-                  <h2>{producto.nombre}</h2>
+                <ProductoItem
+               
+                 id={producto.id}
+                  nombre={producto.nombre} 
+                  precio={producto.precio}
+                   descripcion={producto.descripcion} 
+                   imagen={producto.fotos}
+                
+                
+                
+                />
               </div>)
             
             

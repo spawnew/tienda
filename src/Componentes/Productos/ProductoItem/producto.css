@@ -1,0 +1,20 @@
+.producto img{
+width: 150px;
+height: 150px;
+
+}
+.producto{
+    background-color: lightyellow;
+    color:black;
+    display :flex;
+justify-content: center;
+align-items: center;
+height: 400px;
+width: 300px;
+flex-direction: column;
+    
+}
+.producto ul{
+    list-style: none;
+    padding: 0;
+}
