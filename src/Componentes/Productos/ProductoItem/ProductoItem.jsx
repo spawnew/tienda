@@ -19,6 +19,9 @@ const ProductoItem = ({id, nombre, precio, descripcion, imagen}) => {
                 </li> 
                  <li>
                     <p>Precio: ${precio}</p>
+                </li> 
+                <li>
+                    <button><p>Agregar al carrito</p></button>
                     </li> 
                 
              </ul>
