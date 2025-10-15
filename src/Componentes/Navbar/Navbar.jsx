@@ -8,10 +8,11 @@ const Navbar = () => {
       <ul>
         <li><p>Mi Tienda</p></li>
         <li><NavLink to="/">Productos</NavLink></li>
+        <li><NavLink to="/categoria">Categorias</NavLink></li>
+       
+        <li><NavLink to="/carrito">Carrito</NavLink></li>
         <li><NavLink to="/contacto">Contacto</NavLink></li>
        
-        <li></li>
-        <li></li>
 
    </ul>
 

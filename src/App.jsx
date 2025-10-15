@@ -4,7 +4,9 @@ import Contacto from './Componentes/Contacto/Contacto.jsx'
 import Footer from './Componentes/Footer/Footer.jsx'
 import Navbar from './Componentes/Navbar/Navbar.jsx'
 import Productos from './Componentes/Productos/Productos.jsx'
+import Carrito from './Componentes/Carrito/Carrito.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Categorias from './Componentes/Categorias/Categorias.jsx'
 function App() {
  
 
@@ -14,9 +16,11 @@ function App() {
       
       <Navbar />
      
-      <Routes>
+        <Routes>
+          <Route path='/categoria' element={<Categorias/>}/>
       <Route path='/' element={<Productos/>}/>
-        <Route path='/contacto' element={<Contacto/>}/>
+          <Route path='/contacto' element={<Contacto />} />
+          <Route path='/carrito' element={<Carrito/>}/>
      
       </Routes>
      
