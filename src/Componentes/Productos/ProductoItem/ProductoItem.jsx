@@ -7,6 +7,7 @@ const ProductoItem = ({id, nombre, precio, descripcion, imagen}) => {
   
     return (
         <div className='producto'> 
+            
             <ul>
                 <li>
                     <h2>{nombre}</h2>

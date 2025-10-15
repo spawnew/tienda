@@ -7,6 +7,7 @@ import Productos from './Componentes/Productos/Productos.jsx'
 import Carrito from './Componentes/Carrito/Carrito.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Categorias from './Componentes/Categorias/Categorias.jsx'
+import Home from './Componentes/Home/Home.jsx'
 function App() {
  
 
@@ -17,8 +18,9 @@ function App() {
       <Navbar />
      
         <Routes>
+          <Route path='/' element={<Home/>}/>
           <Route path='/categoria' element={<Categorias/>}/>
-      <Route path='/' element={<Productos/>}/>
+      <Route path='/producto' element={<Productos/>}/>
           <Route path='/contacto' element={<Contacto />} />
           <Route path='/carrito' element={<Carrito/>}/>
      

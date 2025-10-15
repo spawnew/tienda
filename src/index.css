@@ -13,13 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
- 
-  color: #22c55e
- 
-}
+
 a:hover {
-  color: #22c55e
+  color:  #007BFF;
 }
 
 body {
@@ -29,7 +25,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
   flex-direction: column;
-  background-color: #0f0f0f;
+  background-color: #edf0f7;
+  color :black;
 }
 
 h1 {
