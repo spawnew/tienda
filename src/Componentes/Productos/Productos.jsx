@@ -2,6 +2,7 @@ import React from 'react'
 import datos from './datos.js'
 import ProductoItem from './ProductoItem/ProductoItem.jsx'
 import './productos.css'
+import Form from '../Form/Form.jsx'
 const Productos = () => {
   return (
       <div className='productos'>
