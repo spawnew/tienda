@@ -1,8 +1,10 @@
 import React from 'react'
-import  './producto.css'
-const ProductoItem = ({id, nombre, precio, descripcion, imagen}) => {
-  
- 
+import './producto.css'
+import { useContext } from 'react'
+import ContextCart from '../../../Context/ContextCart.jsx'
+const ProductoItem = ({producto}) => {
+    const { nombre, precio, descripcion, fotos} = producto
+ const { agregar } = useContext(ContextCart)
   
   
     return (
@@ -13,7 +15,7 @@ const ProductoItem = ({id, nombre, precio, descripcion, imagen}) => {
                     <h2>{nombre}</h2>
                     </li>
                     <li>
-                        <img src={imagen} alt={nombre} />
+                        <img src={fotos} alt={nombre} />
                     </li>
                   <li>  
                 <p>{descripcion}</p>
@@ -22,7 +24,7 @@ const ProductoItem = ({id, nombre, precio, descripcion, imagen}) => {
                     <p>Precio: ${precio}</p>
                 </li> 
                 <li>
-                    <button><p>Agregar al carrito</p></button>
+                    <button onClick={()=>agregar(producto)}><p>Agregar al carrito</p></button>
                     </li> 
                 
              </ul>

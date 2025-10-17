@@ -13,11 +13,7 @@ const Productos = () => {
               return (<div key={producto.id}>
                 <ProductoItem
                
-                 id={producto.id}
-                  nombre={producto.nombre} 
-                  precio={producto.precio}
-                   descripcion={producto.descripcion} 
-                   imagen={producto.fotos}
+                producto={producto}
                 
                 
                 

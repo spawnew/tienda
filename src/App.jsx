@@ -8,16 +8,18 @@ import Carrito from './Componentes/Carrito/Carrito.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Categorias from './Componentes/Categorias/Categorias.jsx'
 import Home from './Componentes/Home/Home.jsx'
+import { CartProvider } from './Context/ContextCart.jsx'
 function App() {
  
 
   return (
     <>
       <BrowserRouter>
-      
+     <CartProvider>
       <Navbar />
      
         <Routes>
+         
           <Route path='/' element={<Home/>}/>
           <Route path='/categoria' element={<Categorias/>}/>
       <Route path='/producto' element={<Productos/>}/>
@@ -25,7 +27,7 @@ function App() {
           <Route path='/carrito' element={<Carrito/>}/>
      
       </Routes>
-     
+     </CartProvider>
       <Footer />
       
       

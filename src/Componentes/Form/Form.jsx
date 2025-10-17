@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
+import { FaSearch } from "react-icons/fa";
+import{Link} from 'react-router-dom'
 const Form = ({obtener}) => {
  
   const [form, setForm] = useState({ producto: "" })
@@ -23,7 +25,10 @@ const Form = ({obtener}) => {
 <form onSubmit={handleSubmit}>
                 <input type="text" onChange={handleChange} name="producto" value={form.producto} placeholder='Buscar un articulo'>
                 </input>
-</form>
+                <Link to="/producto"> 
+                <button type='submit'> <FaSearch /></button>
+</Link>
+            </form>
     </div>
   )
 }
