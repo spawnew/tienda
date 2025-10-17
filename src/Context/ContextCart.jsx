@@ -18,10 +18,12 @@ const [cart, setCart] = useState([]);
     }
 }
 
-
+const contar = () => {
+    return cart.length;
+}
 
     const carrito = {
-        cart, setCart, agregar
+        cart, setCart, agregar,contar
     }
 return (
         <ContextCart.Provider value={carrito}>

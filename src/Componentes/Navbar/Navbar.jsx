@@ -4,9 +4,11 @@ import Form from '../Form/Form.jsx'
 import './nav.css'
 import { FaCartShopping } from "react-icons/fa6";
 import { FiLogIn } from "react-icons/fi";
+import ContextCart from '../../Context/ContextCart.jsx'
+import { useContext } from 'react'
 const Navbar = () => {
  
-  
+  const { contar } = useContext(ContextCart)
  
   return (
     <nav>
@@ -32,7 +34,7 @@ const Navbar = () => {
         <li><NavLink to="/producto">Productos</NavLink></li>
         <li><NavLink to="/categoria">Categorias</NavLink></li>
        
-        <li><NavLink to="/carrito">Carrito <FaCartShopping />
+        <li><NavLink to="/carrito">Carrito  {contar()}<FaCartShopping />
 </NavLink></li>
         <li><NavLink to="/contacto">Contacto</NavLink></li>
        
