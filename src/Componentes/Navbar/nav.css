@@ -24,9 +24,11 @@ nav ul {
 nav ul li{
     list-style: none;
     padding: 10px;
+    margin: 10px;
+    text-align: center;
     cursor: pointer;
     border-radius: 13px;
-    border: 1px solid rgba(235, 241, 238, 0.4);
+    border: 1px solid rgba(6, 22, 245, 0.4);
     background-color: rgb(44, 5, 236);
     transition: 0.3s;
     height: 2rem;
@@ -44,11 +46,17 @@ nav ul li:hover{
 }
 nav{
     
-border: 1px  solid rgba(17, 17, 17, 0.4);
+
     position: sticky;
     top: 0;
     z-index: 100;
     background-color:#1d1e1f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 nav ul li a{
     text-decoration: none;
