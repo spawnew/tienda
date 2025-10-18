@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav>
 
       <div className='titulo'>
-        <h1>Mi Tienda</h1>
+        <h1>Imperio Yugioh</h1>
         <div className='buscador'>
           <Form/>
          
