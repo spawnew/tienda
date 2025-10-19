@@ -20,7 +20,7 @@ const ProductoItem = ({producto}) => {
                 <p>{descripcion}</p>
                 </li> 
                  <li>
-                    <p className='font-black font '>Precio: {precio}</p>
+                    <p className='font-black font '>Precio:$ {precio}</p>
                 </li> 
                 
                 
