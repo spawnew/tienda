@@ -22,6 +22,12 @@ const Detalles = () => {
                 />
                 <p className="text-gray-700 mb-2">{producto.descripcion}</p>
                 <p className="text-lg font-semibold mb-4">Precio: ${producto.precio}</p>
+                <button
+                    onClick={() => agregar(producto)}
+                    className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
+                >
+                    Agregar al Carrito
+                </button>
             </div>
         </div>
     )
