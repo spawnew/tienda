@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -25,7 +27,10 @@ body {
   min-width: 320px;
   min-height: 100vh;
   flex-direction: column;
-  background-color: #edf0f7;
+
+    background-color: #0a1e5c;
+    /* o el color del gradiente más oscuro */
+
   color :black;
 }
 

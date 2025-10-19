@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Categorias from './Componentes/Categorias/Categorias.jsx'
 import Home from './Componentes/Home/Home.jsx'
 import { CartProvider } from './Context/ContextCart.jsx'
+import Detalles from './Componentes/Productos/Detalles/Detalles.jsx'
 function App() {
  
 
@@ -22,7 +23,8 @@ function App() {
          
           <Route path='/' element={<Home/>}/>
           <Route path='/categoria' element={<Categorias/>}/>
-      <Route path='/producto' element={<Productos/>}/>
+            <Route path='/producto' element={<Productos />} />
+            <Route path='/producto/detalles/:id' element={<Detalles/>}/>
           <Route path='/contacto' element={<Contacto />} />
           <Route path='/carrito' element={<Carrito/>}/>
      

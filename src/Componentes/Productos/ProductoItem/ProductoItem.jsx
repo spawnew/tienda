@@ -1,18 +1,17 @@
 import React from 'react'
 import './producto.css'
-import { useContext } from 'react'
-import ContextCart from '../../../Context/ContextCart.jsx'
+import { Link } from 'react-router-dom'
 const ProductoItem = ({producto}) => {
     const { nombre, precio, descripcion, fotos} = producto
- const { agregar } = useContext(ContextCart)
+ 
   
   
     return (
-        <div className='producto'> 
-            
-            <ul>
+<div className="flex flex-col bg-gray-200 p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-72 text-center">
+           <Link to={`/producto/detalles/${producto.id}`} >
+            <ul className='flex flex-col justify-center items-center'>
                 <li>
-                    <h2>{nombre}</h2>
+                    <h2 className='text-gray-950 text-xl font-bold'>{nombre}</h2>
                     </li>
                     <li>
                         <img src={fotos} alt={nombre} />
@@ -21,14 +20,12 @@ const ProductoItem = ({producto}) => {
                 <p>{descripcion}</p>
                 </li> 
                  <li>
-                    <p>Precio: ${precio}</p>
+                    <p className='font-black font '>Precio: {precio}</p>
                 </li> 
-                <li>
-                    <button onClick={()=>agregar(producto)}><p>Agregar al carrito</p></button>
-                    </li> 
+                
                 
              </ul>
-
+</Link>
 
 
     </div>

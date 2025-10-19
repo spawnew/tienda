@@ -11,10 +11,10 @@ const Navbar = () => {
   const { contar } = useContext(ContextCart)
  
   return (
-    <nav>
+    <nav  class="bg-linear-to-r/srgb from-indigo-500 to-indigo-800 text-white p-1 flex flex-col md:flex-row items-center justify-between">
 
       <div className='titulo'>
-        <h1>Imperio Yugioh</h1>
+        <h1 >Imperio Yugioh</h1>
         <div className='buscador'>
           <Form/>
          
