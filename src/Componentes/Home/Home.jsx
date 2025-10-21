@@ -1,4 +1,5 @@
 import React from 'react'
+import  Opiniones from '../Opiniones/Opiniones.jsx'
 
 const Home = () => {
   return (
@@ -7,7 +8,7 @@ const Home = () => {
       
       
       <h1>Bienvenido a la tienda</h1>
-    
+    <Opiniones/>
     
     
     
