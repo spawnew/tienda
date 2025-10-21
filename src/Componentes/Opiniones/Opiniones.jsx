@@ -17,7 +17,7 @@ const Opiniones = () => {
   }
 
   return (
-    <div className="text-center text-white p-8 bg-gradient-to-r from-indigo-600 via-sky-500 to-indigo-600">
+    <div className="text-center text-white p-8 ">
       <h2 className="text-3xl font-bold mb-8">Opiniones</h2>
 
       <div className="max-w-3xl mx-auto">
@@ -25,7 +25,7 @@ const Opiniones = () => {
           {opinion.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col md:flex-row bg-indigo-700/40 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 p-6 items-center md:items-start justify-center md:justify-start gap-8"
+              className="flex flex-col md:flex-row bg-gray-950 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 p-6 items-center md:items-start justify-center md:justify-start gap-8"
             >
               {/* Imagen + nombre */}
               <div className="flex flex-col items-center md:items-start md:w-1/3">

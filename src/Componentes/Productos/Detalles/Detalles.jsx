@@ -13,8 +13,8 @@ const Detalles = () => {
 
  
         <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-950 via-blue-500 to-blue-950">
-            <div className="flex flex-col items-center justify-center bg-amber-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-[22rem] text-center">
-                <h2 className="text-2xl font-bold mb-3 text-blue-900">{producto.nombre}</h2>
+            <div className="flex flex-col items-center justify-center bg-gray-950 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-[22rem] text-center">
+                <h2 className="text-2xl font-bold mb-3 text-amber-100">{producto.nombre}</h2>
                 <img
                     src={producto.fotos}
                     alt={producto.nombre}

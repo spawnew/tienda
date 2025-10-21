@@ -7,11 +7,11 @@ const ProductoItem = ({producto}) => {
   
   
     return (
-<div className="flex flex-col bg-gray-200 p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-72 text-center">
+<div className="flex flex-col bg-gray-950 p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-72 text-center text-amber-50">
            <Link to={`/producto/detalles/${producto.id}`} >
             <ul className='flex flex-col justify-center items-center'>
                 <li>
-                    <h2 className='text-gray-950 text-xl font-bold'>{nombre}</h2>
+                    <h2 className='text-amber-100 text-xl font-bold'>{nombre}</h2>
                     </li>
                     <li>
                         <img src={fotos} alt={nombre} />
