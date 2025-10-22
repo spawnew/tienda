@@ -20,7 +20,7 @@ const Detalles = () => {
                     alt={producto.nombre}
                     className="w-64 h-64 object-cover rounded-md mb-4"
                 />
-                <p className="text-gray-700 mb-2">{producto.descripcion}</p>
+                <p className="text-gray-400 mb-2">{producto.descripcion}</p>
                 <p className="text-lg font-semibold mb-4">Precio: ${producto.precio}</p>
                 <button
                     onClick={() => agregar(producto)}

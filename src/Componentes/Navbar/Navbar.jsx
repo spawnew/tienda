@@ -14,8 +14,9 @@ const Navbar = () => {
     <nav  className="bg-linear-to-r/srgb  text-white p-1 flex flex-col md:flex-row items-center justify-between">
 
       <div className='titulo'>
-        <h1 >Imperio Yugioh</h1>
-        <div className='buscador'>
+        <NavLink to="/"><h1>Imperio Yugioh</h1></NavLink>
+        
+          <div className='buscador'>
           <Form/>
          
 
@@ -30,7 +31,7 @@ const Navbar = () => {
        
       <ul>
         
-        <li><NavLink to="/"><p>Mi Tienda</p></NavLink></li>
+        <li><NavLink to="/"><p>Home</p></NavLink></li>
         <li><NavLink to="/producto">Productos</NavLink></li>
         <li><NavLink to="/categoria">Categorias</NavLink></li>
        

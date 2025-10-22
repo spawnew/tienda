@@ -17,7 +17,7 @@ const ProductoItem = ({producto}) => {
                         <img src={fotos} alt={nombre} />
                     </li>
                   <li>  
-                <p>{descripcion}</p>
+                <p className='text-gray-400'>{descripcion}</p>
                 </li> 
                  <li>
                     <p className='font-black font '>Precio:$ {precio}</p>

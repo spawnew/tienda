@@ -17,11 +17,12 @@
 
 
 a:hover {
-  color:  #007BFF;
+  color:  #067dfc;
 }
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
