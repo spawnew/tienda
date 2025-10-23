@@ -14,7 +14,7 @@ const Footer = () => {
         
      
 
-      <div className="text-center text-sm text-gray-500 mt-6 border-t border-blue-800 pt-4">
+      <div className="text-center text-sm text-gray-500 mt-6  border-blue-800 ">
         © {new Date().getFullYear()} Imperio Yugioh. Todos los derechos reservados.
       </div>
     </div>
