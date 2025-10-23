@@ -1,21 +1,15 @@
-
 const Footer = () => {
   return (
-    
-      <div className="bg-[#081034] text-center text-gray-400 py-3 text-sm mt-auto">
-     
-
+    <footer className="bg-[#081034] text-gray-300 py-4 mt-auto">
+      <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
        
+        <p className="text-sm text-center sm:text-left">
+          © 2025 Imperio Yugioh. Todos los derechos reservados.
+        </p>
 
-       
         
-       
-        
-     
-
-        © {new Date().getFullYear()} Imperio Yugioh. Todos los derechos reservados.
-      
-    </div>
+      </div>
+    </footer>
   )
 }
 

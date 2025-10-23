@@ -11,38 +11,29 @@ import Home from './Componentes/Home/Home.jsx'
 import { CartProvider } from './Context/ContextCart.jsx'
 import Detalles from './Componentes/Productos/Detalles/Detalles.jsx'
 function App() {
- 
-
   return (
-    <>
+    <div className="flex flex-col min-h-screen">  {/* Estructura base */}
       <BrowserRouter>
-     <CartProvider>
-      <Navbar />
-     
-        <Routes>
-         
-          <Route path='/' element={<Home/>}/>
-          <Route path='/categoria' element={<Categorias/>}/>
-            <Route path='/producto' element={<Productos />} />
-            <Route path='/producto/detalles/:id' element={<Detalles/>}/>
-          <Route path='/contacto' element={<Contacto />} />
-          <Route path='/carrito' element={<Carrito/>}/>
-     
-      </Routes>
-     </CartProvider>
-      <Footer />
-      
-      
+        <CartProvider>
+          <Navbar />
+          
+          {/* Contenido principal */}
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/categoria" element={<Categorias />} />
+              <Route path="/producto" element={<Productos />} />
+              <Route path="/producto/detalles/:id" element={<Detalles />} />
+              <Route path="/contacto" element={<Contacto />} />
+              <Route path="/carrito" element={<Carrito />} />
+            </Routes>
+          </main>
+
+          {/* Footer al final */}
+          <Footer />
+        </CartProvider>
       </BrowserRouter>
- 
-      
-     
-     
-      
- 
-         
-      
-    </>
+    </div>
   )
 }
 
