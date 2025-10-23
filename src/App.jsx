@@ -14,11 +14,11 @@ function App() {
   return (
     <BrowserRouter>
       <CartProvider>
-        {/* Contenedor general con altura completa */}
+       
         <div className="flex flex-col min-h-screen bg-gradient-to-b from-[#0b1444] to-[#081034]">
           <Navbar />
           
-          {/* Área del contenido que se expande */}
+         
           <main className="flex-grow">
             <Routes>
               <Route path='/' element={<Home />} />
