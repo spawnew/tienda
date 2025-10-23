@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Form from '../Form/Form.jsx'
-import './nav.css'
+
 import { FaCartShopping } from "react-icons/fa6";
 import { FiLogIn } from "react-icons/fi";
 import ContextCart from '../../Context/ContextCart.jsx'
@@ -11,9 +11,9 @@ const Navbar = () => {
   const { contar } = useContext(ContextCart)
  
   return (
-    <nav  className="bg-linear-to-r/srgb  text-white p-1 flex flex-col md:flex-row items-center justify-between">
+    <nav  className=" flex-col flex-wrap  text-white p-1   shadow-lg  md:flex-row md:justify-between md:items-center md:px-8">
 
-      <div className='titulo'>
+      <div className='titulo flex flex-col md:flex-row md:items-center gap-4'>
         <NavLink to="/"><h1>Imperio Yugioh</h1></NavLink>
         
           <div className='buscador'>
@@ -29,7 +29,7 @@ const Navbar = () => {
         
        
        
-      <ul>
+      <ul className='flex flex-col md:flex-row'>
         
         <li><NavLink to="/"><p>Home</p></NavLink></li>
         <li><NavLink to="/producto">Productos</NavLink></li>
