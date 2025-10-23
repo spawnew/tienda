@@ -3,7 +3,7 @@ import './footer.css'
 const Footer = () => {
   return (
     
-      <div className="fixed  bottom-0 left-0 w-full bg-gray-900 text-white text-center mt-6">
+      <div className="  bottom-0 left-0 w-full bg-gray-900 text-white text-center mt-6">
      
 
        
