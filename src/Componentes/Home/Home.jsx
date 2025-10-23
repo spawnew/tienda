@@ -5,9 +5,8 @@ import LinkProduct from '../linkProduct/LinkProduct.jsx'
 
 const Home = () => {
   return (
-    <div className='bg-gradient-to-b from-blue-900 to-black  flex flex-col items-center justify-center gap-8 p-4'>
-      
-      <p className='flex flex-2'></p>
+    <div className='bg-gradient-to-b from-blue-900 to-black '>
+     
       
      
       <Sobre></Sobre>
