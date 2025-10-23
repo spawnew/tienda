@@ -11,10 +11,10 @@ const Navbar = () => {
   const { contar } = useContext(ContextCart)
  
   return (
-    <nav  className=" flex flex-col flex-wrap  text-white p-1  shadow-lg  md:flex-row md:justify-between md:items-center md:px-8">
+    <nav  className=" flex flex-col flex-wrap md:text-2sm hover:scale-105 transition duration-300   text-white p-1  shadow-lg  md:flex-row md:justify-around md:items-center ">
 
-      <div className='titulo flex flex-col md:flex-row md:items-center gap-4'>
-        <NavLink to="/"><h1>Imperio Yugioh</h1></NavLink>
+      <div className='titulo flex flex-col md:flex-row md:items-center gap-4 '>
+        <NavLink to="/"><h1 className='font-bold text-2xl '>Imperio Yugioh</h1></NavLink>
         
           <div className='buscador'>
           <Form/>
@@ -29,15 +29,15 @@ const Navbar = () => {
         
        
        
-      <ul className='flex flex-col md:flex-row md:items-center gap-6 text-lg font-medium '>
+      <ul className='flex flex-col md:flex-row md:items-center gap-6 text-lg font-medium  '>
         
-        <li><NavLink to="/"><p>Home</p></NavLink></li>
-        <li><NavLink to="/producto">Productos</NavLink></li>
-        <li><NavLink to="/categoria">Categorias</NavLink></li>
+        <li className='hover:border-b-1'><NavLink to="/"><p>Home</p></NavLink></li>
+        <li className='hover:border-b-1'><NavLink to="/producto">Productos</NavLink></li>
+        <li className='hover:border-b-1'><NavLink to="/categoria">Categorias</NavLink></li>
        
         <li><NavLink to="/carrito">Carrito  {contar()}<FaCartShopping />
 </NavLink></li>
-        <li><NavLink to="/contacto">Contacto</NavLink></li>
+        <li className='hover:border-b-1'><NavLink to="/contacto">Contacto</NavLink></li>
        
 
    </ul>
