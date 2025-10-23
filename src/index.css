@@ -28,8 +28,8 @@ body {
  
   flex-direction: column;
 
-    background-color: #0a1e5c;
-    /* o el color del gradiente más oscuro */
+    background-color: black;
+    
 
   color :black;
 }

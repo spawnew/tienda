@@ -7,7 +7,7 @@ const Carrito = () => {
   const { cart } = useContext(ContextCart)
    
    return (
-    <div className='flex flex-col  items-center text-gray-950 bg-black'>
+    <div className='flex flex-col min-h-screen items-center text-gray-950 bg-gradient-to-b   from-blue-900 to-black'>
       {cart.length === 0 ? (
         <h2 className='text-amber-50'>El carrito está vacío</h2>
       ) : (
