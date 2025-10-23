@@ -1,7 +1,7 @@
 import React from 'react'
 import  Opiniones from '../Opiniones/Opiniones.jsx'
 import Sobre from '../Sobre/Sobre.jsx'
-import LinkProduct from '../linkProduct/linkProduct.jsx'
+import LinkProduct from '../linkProduct/LinkProduct.jsx'
 
 const Home = () => {
   return (
