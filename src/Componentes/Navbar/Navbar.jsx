@@ -29,7 +29,7 @@ const Navbar = () => {
         
        
        
-      <ul className='flex justify-center items-center text-2xl   md:flex-row md:items-center gap-6 md:text-sm font-medium  '>
+      <ul className='flex justify-center flex-wrap items-center text-2xl   md:flex-row md:items-center gap-6 md:text-sm font-medium  '>
         <li><button className=''>Login <FiLogIn /></button></li>
         <li className='hover:border-b-1'><NavLink to="/"><p>Home</p></NavLink></li>
         <li className='hover:border-b-1'><NavLink to="/producto">Productos</NavLink></li>

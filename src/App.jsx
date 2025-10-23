@@ -1,4 +1,4 @@
-import './App.css'
+
 import Contacto from './Componentes/Contacto/Contacto.jsx'
 import Footer from './Componentes/Footer/Footer.jsx'
 import Navbar from './Componentes/Navbar/Navbar.jsx'
@@ -9,17 +9,17 @@ import Categorias from './Componentes/Categorias/Categorias.jsx'
 import Home from './Componentes/Home/Home.jsx'
 import { CartProvider } from './Context/ContextCart.jsx'
 import Detalles from './Componentes/Productos/Detalles/Detalles.jsx'
-
+import './App.css'
 function App() {
   return (
     <BrowserRouter>
       <CartProvider>
        
-        <div className="flex flex-col min-h-screen bg-gradient-to-b from-[#0b1444] to-[#081034]">
+       
           <Navbar />
           
          
-          <main className="flex-grow">
+        
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/categoria' element={<Categorias />} />
@@ -28,10 +28,10 @@ function App() {
               <Route path='/contacto' element={<Contacto />} />
               <Route path='/carrito' element={<Carrito />} />
             </Routes>
-          </main>
+      
 
           <Footer />
-        </div>
+     
       </CartProvider>
     </BrowserRouter>
   )

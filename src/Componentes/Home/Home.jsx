@@ -5,7 +5,8 @@ import LinkProduct from '../linkProduct/LinkProduct.jsx'
 
 const Home = () => {
   return (
-    <div className=' flex flex-col   bg-gradient-to-b from-[#0b1444] to-[#081034] text-white"  '>
+    <div className='flex flex-col @md:flex-col flex-wrap items-center justify-center gap-4 p-4 bg-gradient-to-b from-blue-900 to-black  hover:shadow-xl transition duration-300'>
+  
      
       
      

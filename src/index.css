@@ -25,21 +25,16 @@ body {
   padding: 0;
   display: flex;
   place-items: center;
- 
-  flex-direction: column;
+    flex-direction: column;
+  flex-wrap: wrap;
+
 
     background-color: black;
     
 
   color :black;
 }
-html,
-body {
-  height: 100%;
-  background-color: #081034;
- 
 
-}
 
 #root {
   min-height: 100%;
