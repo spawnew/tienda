@@ -24,7 +24,7 @@ const Form = ({obtener}) => {
       <div>
           
 <form onSubmit={handleSubmit}>
-                <input className='p-2 bg-amber-50 rounded-2xl text-black' type="text" onChange={handleChange} name="producto" value={form.producto} placeholder='Buscar un articulo'>
+                <input className='p-3 w-150 md:w-100  bg-amber-50 rounded-2xl text-black' type="text" onChange={handleChange} name="producto" value={form.producto} placeholder='Buscar un articulo'>
                 </input>
                 <Link to="/producto"> 
                 <button className='login-btn' type='submit'> <FaSearch /></button>
