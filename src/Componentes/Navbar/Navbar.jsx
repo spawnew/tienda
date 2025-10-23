@@ -11,7 +11,7 @@ const Navbar = () => {
   const { contar } = useContext(ContextCart)
  
   return (
-    <nav  className=" flex-col flex-wrap  text-white p-1   shadow-lg  md:flex-row md:justify-between md:items-center md:px-8">
+    <nav  className=" flex flex-col flex-wrap  text-white p-1  shadow-lg  md:flex-row md:justify-between md:items-center md:px-8">
 
       <div className='titulo flex flex-col md:flex-row md:items-center gap-4'>
         <NavLink to="/"><h1>Imperio Yugioh</h1></NavLink>
@@ -29,7 +29,7 @@ const Navbar = () => {
         
        
        
-      <ul className='flex flex-col md:flex-row'>
+      <ul className='flex flex-col md:flex-row md:items-center gap-6 text-lg font-medium '>
         
         <li><NavLink to="/"><p>Home</p></NavLink></li>
         <li><NavLink to="/producto">Productos</NavLink></li>
