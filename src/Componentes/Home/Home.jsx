@@ -5,14 +5,14 @@ import LinkProduct from '../linkProduct/LinkProduct.jsx'
 
 const Home = () => {
   return (
-    <div className=' flex flex-col bg-gradient-to-b   from-blue-900 to-black max-h-screen '>
+    <div className=' flex flex-col bg-gradient-to-b   from-blue-900 to-black min-h-screen   '>
      
       
-     
+     <div className='flex-grow'>
       <Sobre></Sobre>
       <LinkProduct></LinkProduct>
     <Opiniones/>
-    
+    </div>
     
     
     </div>
