@@ -5,7 +5,7 @@ import LinkProduct from '../linkProduct/LinkProduct.jsx'
 
 const Home = () => {
   return (
-    <div className='flex flex-col @md:flex-col flex-wrap items-center justify-center gap-4 p-4 bg-gradient-to-b from-blue-900 to-black  hover:shadow-xl transition duration-300'>
+    <div className='flex flex-col bg-blue-950 @md:flex-col flex-wrap items-center justify-center gap-4 p-4   hover:shadow-xl transition duration-300'>
   
      
       

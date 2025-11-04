@@ -5,7 +5,7 @@ import './productos.css'
 import Form from '../Form/Form.jsx'
 const Productos = () => {
   return (
-      <div className='flex flex-row @md:flex-col flex-wrap items-center justify-center gap-4 p-4 bg-gradient-to-b from-blue-900 to-black  hover:shadow-xl transition duration-300'>
+      <div className='flex flex-row bg-blue-950 @md:flex-col flex-wrap items-center justify-center gap-4 p-4 <body class="min-h-screen bg-gradient-to-b from-darkTop to-darkBottom text-textMain hover:shadow-xl transition duration-300'>
           
 
 

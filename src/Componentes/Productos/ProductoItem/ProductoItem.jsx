@@ -7,7 +7,7 @@ const ProductoItem = ({producto}) => {
   
   
     return (
-<div className="flex flex-col bg-gray-950 p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-72 text-center text-amber-50">
+<div className="flex flex-col bg-black border-blue-600 p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 w-70 text-center text-amber-50">
            <Link to={`/producto/detalles/${producto.id}`} >
             <ul className='flex flex-col justify-center items-center'>
                 <li>
