@@ -25,7 +25,7 @@ const Opiniones = () => {
           {opinion.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col md:flex-row bg-gray-950 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 p-6 items-center md:items-start justify-center md:justify-start gap-8"
+              className="flex flex-col md:flex-row rounded-2xl shadow-lg hover:shadow-xl transition duration-300 p-6 items-center md:items-start justify-center md:justify-start gap-8"
             >
               {/* Imagen + nombre */}
               <div className="flex flex-col items-center md:items-start md:w-1/3">
