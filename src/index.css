@@ -21,15 +21,15 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  
   display: flex;
   place-items: center;
     flex-direction: column;
   flex-wrap: wrap;
+background-color: #172554;
 
 
-    background-color: black;
+ 
     
 
   color :black;

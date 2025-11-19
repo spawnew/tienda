@@ -1,57 +1,60 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import Form from '../Form/Form.jsx'
 
-import { FaCartShopping } from "react-icons/fa6";
-import { FiLogIn } from "react-icons/fi";
+import { FaCartShopping } from "react-icons/fa6"
+import { FiLogIn } from "react-icons/fi"
+
 import ContextCart from '../../Context/ContextCart.jsx'
-import { useContext } from 'react'
+
 const Navbar = () => {
- 
   const { contar } = useContext(ContextCart)
- 
+
   return (
-    <nav  className=" flex flex-col  flex-wrap md:text-2sm hover:scale-105 transition duration-300  items-center px-8 py-4 bg-transparent   text-white p-1  shadow-lg  md:flex-row md:justify-around md:items-center ">
+    <nav className="flex flex-col  bg-blue-950 md:flex-row  md:justify-between   items-center px-8 py-4 text-white shadow-lg gap-4">
+      
+      <div className="flex flex-col md:flex-row items-center gap-6">
+        <NavLink to="/">
+          <h1 className="font-bold text-2xl hover:scale-105 transition">Imperio Yugioh</h1>
+        </NavLink>
 
-      <div className='titulo flex flex-col md:flex-row md:items-center gap-4 '>
-        <NavLink to="/"><h1 className='font-bold text-2xl '>Imperio Yugioh</h1></NavLink>
-        
-          <div className='buscador'>
-          <Form/>
-         
-
-        </div>
-        <div>
-          
+        <div className="w-full md:w-auto">
+          <Form />
         </div>
       </div>
-      
-        
-       
-       
-      <ul className='flex justify-center flex-wrap flex-col items-center text-2xl   md:flex-row md:items-center gap-4 md:text-sm font-medium  '>
-        <li><button className=''>Login <FiLogIn /></button></li>
-        <li className='hover:border-b-1'><NavLink to="/"><p>Home</p></NavLink></li>
-        <li className='hover:border-b-1'><NavLink to="/producto">Productos</NavLink></li>
-        <li className='hover:border-b-1'><NavLink to="/categoria">Categorias</NavLink></li>
-       
-        <li><NavLink to="/carrito">Carrito  {contar()}<FaCartShopping />
-</NavLink></li>
-        <li className='hover:border-b-1'><NavLink to="/contacto">Contacto</NavLink></li>
-       
 
-   </ul>
+     
+      <ul className="flex flex-col md:flex-row items-center gap-4 text-lg md:text-sm font-medium">
 
+        <li>
+          <button className="flex items-center gap-1 hover:scale-105 transition">
+            Login <FiLogIn className="text-xl"/>
+          </button>
+        </li>
 
- 
+        <li className="hover:border-b border-white">
+          <NavLink to="/">Home</NavLink>
+        </li>
+
+        <li className="hover:border-b border-white">
+          <NavLink to="/producto">Productos</NavLink>
+        </li>
+
+        <li className="hover:border-b border-white">
+          <NavLink to="/categoria">Categorias</NavLink>
+        </li>
+
+        <li className="hover:scale-105 transition flex items-center gap-1">
+          <NavLink to="/carrito" className="flex items-center gap-1">
+            Carrito {contar()} <FaCartShopping className="text-xl"/>
+          </NavLink>
+        </li>
+
+        <li className="hover:border-b border-white">
+          <NavLink to="/contacto">Contacto</NavLink>
+        </li>
+      </ul>
     </nav>
-
-       
-
-
-
-
-  
   )
 }
 
