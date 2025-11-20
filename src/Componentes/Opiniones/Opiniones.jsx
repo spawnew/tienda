@@ -18,7 +18,7 @@ const Opiniones = () => {
 
   return (
     <div className="text-center text-white p-8 ">
-      <h2 className="text-3xl font-bold mb-8">Comentarios de nuestros compradores</h2>
+      <h2 className=" text-1xl md:text-3xl md:font-bold md:mb-8">Comentarios de nuestros compradores</h2>
 
       <div className="max-w-3xl mx-auto">
         <Slider {...settings}>
