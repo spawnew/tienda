@@ -20,22 +20,7 @@ a:hover {
   color:  #067dfc;
 }
 
-body {
-  
-  display: flex;
-  place-items: center;
-    flex-direction: column;
-  flex-wrap: wrap;
-background-color:#172554;
 
-  justify-content: center;
- 
-   
-  margin:0;
-  padding:0;
-
-  color :black;
-}
 
 
 #root {
