@@ -2,7 +2,7 @@ import React from 'react'
 
 const LinkProduct = () => {
   return (
-    <div className="flex flex-col items-center text-amber-50 px-4 py-10">
+    <div className="flex flex-col items-center text-amber-100 px-4 py-10">
       
       <p className="text-lg text-center mb-1">
         Para ver las nuestras en stock.
@@ -12,7 +12,7 @@ const LinkProduct = () => {
         Si quieres ver más cartas que tenemos en stock, puedes visitar nuestro drive.
       </p>
 
-      {/* Imagen + frase */}
+    
       <div className="flex flex-col items-center">
         <a
           href="https://drive.google.com/drive/u/0/folders/1QMC-FI6N5I1CN17iMVa5HbBq0O3QAyX4?fbclid=IwY2xjawJs_YtleHRuA2FlbQIxMAABHqldnBrR20KKUwc9sPmciqWPF4u5UVoSTpkSW6P5KkynggQc6q7tfODRnoUc_aem_LyUpIaHql32uX8-onSb7Og"
