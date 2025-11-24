@@ -6,7 +6,7 @@ import { FaCartShopping } from "react-icons/fa6"
 import { FiLogIn } from "react-icons/fi"
 
 import ContextCart from '../../Context/ContextCart.jsx'
-
+import { Link } from 'react-router-dom'
 const Navbar = () => {
   const { contar } = useContext(ContextCart)
 
@@ -26,12 +26,13 @@ const Navbar = () => {
      
       <ul className="flex flex-col md:flex-row items-center gap-4 text-lg md:text-sm font-medium">
 
+       <Link to="/admin">
         <li>
           <button className="flex items-center gap-1 hover:scale-105 transition">
             Login <FiLogIn className="text-xl"/>
           </button>
         </li>
-
+</Link>
         <li className="hover:border-b border-white">
           <NavLink to="/">Home</NavLink>
         </li>

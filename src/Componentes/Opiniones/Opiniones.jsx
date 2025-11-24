@@ -17,7 +17,7 @@ const Opiniones = () => {
   }
 
   return (
-    <div className="text-center text-white p-8 ">
+    <div className="text-center items-center text-white p-8 ">
       <h2 className=" text-1xl md:text-3xl md:font-bold md:mb-8">Comentarios de nuestros compradores</h2>
 
       <div className="max-w-3xl mx-auto">
@@ -28,7 +28,7 @@ const Opiniones = () => {
       className="flex flex-col md:flex-row rounded-2xl shadow-lg hover:shadow-xl transition duration-300 p-6 
                  items-center md:items-start justify-center md:justify-start gap-8 w-full"
     >
-      {/* Imagen y nombre */}
+      
       <div className="flex flex-col items-center md:items-start md:w-1/3">
         <img
           className="rounded-full w-28 h-28 mb-3 border-4 border-amber-400 object-cover"
@@ -38,7 +38,7 @@ const Opiniones = () => {
         <p className="text-amber-100 font-semibold text-lg">{item.nombre}</p>
       </div>
 
-      {/* Texto del comentario */}
+    
       <div className="flex flex-col md:w-2/3 w-full">
         <p className="text-amber-100 italic text-sm sm:text-base md:text-lg leading-relaxed break-words">
           “{item.comentario}”

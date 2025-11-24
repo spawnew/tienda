@@ -35,7 +35,7 @@ const opinion = [
     {
         id: 5,
         nombre: 'Ishizu Ishtar',
-        comentario: 'Mi collar del milenio predice que esta tieneda tiene futuro.',
+        comentario: 'Mi collar del milenio predice que esta tienda tiene futuro.',
         foto: ishizu
     },
     {

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom' 
 const LinkProduct = () => {
   return (
     <div className="flex flex-col items-center text-amber-100 px-4 py-10">
@@ -7,11 +7,13 @@ const LinkProduct = () => {
       <p className="text-lg text-center mb-1">
         Para ver las nuestras en stock.
       </p>
-
+      <Link to="/producto" className="mb-4">
+        <button>Ir a productos </button>
+        </Link>
       <p className="text-lg text-center mb-6">
         Si quieres ver más cartas que tenemos en stock, puedes visitar nuestro drive.
       </p>
-
+           
     
       <div className="flex flex-col items-center">
         <a
