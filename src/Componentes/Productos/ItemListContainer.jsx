@@ -17,8 +17,8 @@ useEffect(() => {
 }, [category]) //el [] sirve q para q el useEffect este atento a algo en este caso a category, recordar q useEffect solo se dispara una vez
     return (
         <section>
-            <h1>Bienvenidos</h1>
-            <div className="productos-panaderia-grid">
+            
+            <div >
                 <ItemList list={products}/>
             </div>
             

@@ -42,7 +42,10 @@ const Navbar = () => {
         </li>
 
         <li className="hover:border-b border-white">
-          <NavLink to="/categoria">Categorias</NavLink>
+          <NavLink to="/producto/sellado">Sellado</NavLink>
+        </li>
+         <li className="hover:border-b border-white">
+          <NavLink to="/producto/individual">Cartas</NavLink>
         </li>
 
         <li className="hover:scale-105 transition flex items-center gap-1">

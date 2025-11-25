@@ -5,7 +5,7 @@ import Navbar from './Componentes/Navbar/Navbar.jsx'
 import { ItemListContainer }  from './Componentes/Productos/ItemListContainer'
 import Carrito from './Componentes/Carrito/Carrito.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Categorias from './Componentes/Categorias/Categorias.jsx'
+
 import Home from './Componentes/Home/Home.jsx'
 import { CartProvider } from './Context/ContextCart.jsx'
 import {ItemDetailContainer} from './Componentes/Productos/ItemDetailContainer/ItemDetailContainer.jsx'
@@ -32,7 +32,7 @@ function App() {
           <Routes>
              <Route element={<MainLayout/>}>
               <Route path='/' element={<Home />} />
-              <Route path='/categoria' element={<Categorias />} />
+              <Route path='/producto/:category' element={<ItemListContainer />} />
               <Route path='/producto' element={<ItemListContainer />} />
               <Route path='/detail/:id' element={<ItemDetailContainer/>} />
               <Route path='/contacto' element={<Contacto />} />

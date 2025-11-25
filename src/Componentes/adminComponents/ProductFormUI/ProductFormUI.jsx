@@ -8,11 +8,11 @@ export const ProductFormUI = ({
 }) => { //todas estas props van a venir del padre
   return (
     <section>
-      <form className="product-form" onSubmit={onSubmit}>
+      <form className="flex flex-col item-center p-2 m-2 w-80 h-110 bg-black" onSubmit={onSubmit}>
         <h2>Agregar producto</h2>
         <div>
           <label>Nombre:</label>
-          <input
+          <input className="bg-gray-800 rounded m-1 w-70"
             type="text"
             name="name"
             value={product.name}
@@ -23,7 +23,7 @@ export const ProductFormUI = ({
         </div>
         <div>
           <label>Precio:</label>
-          <input
+          <input className="bg-gray-800 rounded m-1 w-70"
             type="number"
             name="price"
             value={product.price}
@@ -34,7 +34,7 @@ export const ProductFormUI = ({
         </div>
         <div>
           <label>Categoria</label>
-          <input
+          <input className="bg-gray-800 rounded m-1 w-70" 
             type="text"
             name="category"
             value={product.category}
@@ -45,7 +45,7 @@ export const ProductFormUI = ({
         </div>
         <div>
           <label>Descripcion:</label>
-          <textarea
+          <textarea className="bg-gray-800 rounded m-1 w-70"
             name="description"
             value={product.description}
             onChange={onChange}
@@ -55,14 +55,14 @@ export const ProductFormUI = ({
         </div>
         <div>
           <label>Imagen:</label>
-          <input
+          <input className="bg-gray-800 rounded m-1 w-70"
             type="file"
             accept="image/*"
             onChange={(e) => onFileChange(e.target.files?.[0] ?? null)}
           />
           {errors.file && <p className="error">{errors.file}</p>}
         </div>
-        <button className="btn-panaderia" type="submit" disabled={loading}>
+        <button className="bg-gray-800 m-5 p-3 rounded hover:border-amber-200 hover:border-2" type="submit" disabled={loading}>
           {loading ? "Guardando..." : "Guardar"}
         </button>
       </form>
