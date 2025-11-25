@@ -13,8 +13,8 @@ import './App.css'
 import { AuthProvider } from './Context/AuthContext/AuthProvider.jsx'
 import {Login} from './Componentes/Login/Login.jsx'
 import {RutaProtegida} from './Componentes/RutaProtegida/RutaProtegida'
-import { MainLayout } from './Layouts/Mainlayout.jsx'
-import { AdminLayout } from './Layouts/Adminlayout.jsx'
+import { MainLayout } from './Layouts/MainLayout.jsx'
+import { AdminLayout } from './Layouts/AdminLayout.jsx'
 import { ProductFormContainer } from './Componentes/adminComponents/ProductFormContainer/ProductFormContainer'
 import { ToastContainer } from "react-toastify";
 
