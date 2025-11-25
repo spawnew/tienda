@@ -1,18 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-
 import './App.css';
-
-// Contextos
 import { CartProvider } from './Context/ContextCart.jsx';
 import { AuthProvider } from './Context/AuthContext/AuthProvider.jsx';
-
-// Layouts
-import { MainLayout } from './Layouts/MainLayout.jsx';
-import { AdminLayout } from './Layouts/AdminLayout.jsx';
-
-// Componentes
+import { MainLayout } from './Layouts/MainLayout';
+import { AdminLayout } from './Layouts/AdminLayout';
 import Navbar from './Componentes/Navbar/Navbar.jsx';
 import Footer from './Componentes/Footer/Footer.jsx';
 import Home from './Componentes/Home/Home.jsx';
@@ -42,7 +35,7 @@ function App() {
               <Route path='/carrito' element={<Carrito />} />
             </Route>
 
-            {/* Layout admin */}
+          
             <Route path="/admin" element={<AdminLayout />}>
               <Route index element={<Login />} />
               <Route 
