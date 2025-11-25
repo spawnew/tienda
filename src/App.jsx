@@ -25,7 +25,7 @@ function App() {
 
           <Routes>
 
-            {/* Layout principal */}
+          
             <Route element={<MainLayout />}>
               <Route path='/' element={<Home />} />
               <Route path='/producto' element={<ItemListContainer />} />
