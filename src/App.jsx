@@ -4,9 +4,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import { CartProvider } from './Context/ContextCart.jsx';
 import { AuthProvider } from './Context/AuthContext/AuthProvider.jsx';
-import { MainLayout } from './Layouts/MainLayout';
-import { AdminLayout } from './Layouts/AdminLayout';
-import Navbar from './Componentes/Navbar/Navbar.jsx';
+import { MainLayout } from './Layouts/MainLayout.jsx';
+import { AdminLayout } from './Layouts/AdminLayout.jsx';
+
 import Footer from './Componentes/Footer/Footer.jsx';
 import Home from './Componentes/Home/Home.jsx';
 import Contacto from './Componentes/Contacto/Contacto.jsx';
