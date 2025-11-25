@@ -4,8 +4,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import { CartProvider } from './Context/ContextCart.jsx';
 import { AuthProvider } from './Context/AuthContext/AuthProvider.jsx';
-import { MainLayout } from '../src/Layouts/MainLayout.jsx'
-import { AdminLayout } from '../src/Layouts/AdminLayout.jsx';
+import { MainLayout } from './Layouts/MainLayout.jsx'
+import { AdminLayout } from './Layouts/AdminLayout.jsx';
 
 import Footer from './Componentes/Footer/Footer.jsx';
 import Home from './Componentes/Home/Home.jsx';
@@ -50,7 +50,6 @@ function App() {
 
           </Routes>
 
-          {/* Toast */}
           <ToastContainer 
             position="top-right"
             autoClose={1000}
@@ -58,7 +57,7 @@ function App() {
             closeOnClick
             pauseOnHover
             draggable
-            theme="blue"
+            theme="Blue"
           />
 
           <Footer />
