@@ -13,14 +13,12 @@ const Navbar = () => {
   return (
     <nav className="flex flex-col  bg-blue-950 md:flex-row  md:justify-between   items-center px-8 py-4 text-white shadow-lg gap-4">
       
-      <div className="flex flex-col md:flex-row items-center gap-6">
+      <div className="flex flex-col md:flex-row items-center gap-4">
         <NavLink to="/">
           <h1 className="font-bold text-2xl hover:scale-105 transition text-amber-400">Imperio Yugioh</h1>
         </NavLink>
 
-        <div className="w-full md:w-auto">
-          <Form />
-        </div>
+       
       </div>
 
      

@@ -8,7 +8,7 @@ const Contacto = () => {
           action="https://formspree.io/f/xjkwddaw"
           method="post"
           id="form"
-          className="w-full max-w-md bg-gray-900 text-gray-200 mb-4 shadow-lg flex flex-col space-y-3 p-6 rounded-2xl border border-blue-800"
+          className="w-full max-w-md bg-gray-900 text-gray-200 mb-4 shadow-lg flex flex-col space-y-3 p-6 rounded-2xl border border-amber-300"
         >
           <legend className="text-lg font-bold mb-2 text-center">
             Si deseas queres contactarnos, envianos un mensaje!
