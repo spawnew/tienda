@@ -22,8 +22,16 @@ const contar = () => {
     return cart.length;
 }
 
-    const carrito = {
-        cart, setCart, agregar,contar
+   
+const deleteCart = () => {
+    setCart([]);
+}
+ const carrito = {
+        cart,
+        setCart,
+        agregar,
+        contar,
+        deleteCart
     }
 return (
         <ContextCart.Provider value={carrito}>

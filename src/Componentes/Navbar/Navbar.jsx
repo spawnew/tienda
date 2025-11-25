@@ -15,7 +15,7 @@ const Navbar = () => {
       
       <div className="flex flex-col md:flex-row items-center gap-6">
         <NavLink to="/">
-          <h1 className="font-bold text-2xl hover:scale-105 transition">Imperio Yugioh</h1>
+          <h1 className="font-bold text-2xl hover:scale-105 transition text-amber-400">Imperio Yugioh</h1>
         </NavLink>
 
         <div className="w-full md:w-auto">
@@ -24,7 +24,7 @@ const Navbar = () => {
       </div>
 
      
-      <ul className="flex flex-col md:flex-row items-center gap-4 text-lg md:text-sm font-medium">
+      <ul className="flex flex-col text-amber-200 md:flex-row items-center gap-4 text-lg md:text-sm font-medium">
 
        <Link to="/admin">
         <li>
