@@ -1,4 +1,4 @@
-
+import { toast } from "react-toastify";
 import { createContext, useState } from "react";
 
   const ContextCart= createContext(null);
@@ -13,9 +13,11 @@ const [cart, setCart] = useState([]);
     const agregar = (item) => {
         if (controlar(item.id)) {
             setCart(cart.map((item) => item.id === item.id ? { ...item,  cantidad: item.cantidad + 1 } : item));
-    } else {
+   
+        } else {
         setCart([...cart, { ...item, cantidad: 1 }]);
-    }
+        }
+        toast.success(`"${item.name}" se agregó al carrito 🎉`)
 }
 
 const contar = () => {

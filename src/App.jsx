@@ -5,7 +5,7 @@ import Navbar from './Componentes/Navbar/Navbar.jsx'
 import { ItemListContainer }  from './Componentes/Productos/ItemListContainer'
 import Carrito from './Componentes/Carrito/Carrito.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-
+import 'react-toastify/dist/ReactToastify.css';
 import Home from './Componentes/Home/Home.jsx'
 import { CartProvider } from './Context/ContextCart.jsx'
 import {ItemDetailContainer} from './Componentes/Productos/ItemDetailContainer/ItemDetailContainer.jsx'
@@ -16,6 +16,8 @@ import {RutaProtegida} from './Componentes/RutaProtegida/RutaProtegida'
 import { MainLayout } from './Layouts/Mainlayout.jsx'
 import { AdminLayout } from './Layouts/Adminlayout.jsx'
 import { ProductFormContainer } from './Componentes/adminComponents/ProductFormContainer/ProductFormContainer'
+import { ToastContainer } from "react-toastify";
+
 function App() {
   return (
     <BrowserRouter>
@@ -51,7 +53,16 @@ function App() {
                   } 
                 />
               </Route>
-</Routes >
+          </Routes >
+          <ToastContainer 
+            position="top-right"
+            autoClose={1000}
+            hideProgressBar={true}
+            closeOnClick
+            pauseOnHover
+            draggable
+            theme="blue"
+          />
           <Footer />
      
       </CartProvider>
