@@ -27,13 +27,18 @@ const contar = () => {
    
 const deleteCart = () => {
     setCart([]);
+    }
+    const comprar  = () => {
+        setCart([]);
+        toast.success(`"Gracias por la compra  🎉`)
 }
  const carrito = {
         cart,
         setCart,
         agregar,
         contar,
-        deleteCart
+     deleteCart,
+        comprar 
     }
 return (
         <ContextCart.Provider value={carrito}>

@@ -57,7 +57,7 @@ function App() {
             closeOnClick
             pauseOnHover
             draggable
-            theme="Blue"
+            theme="Black"
           />
 
           <Footer />
