@@ -12,7 +12,7 @@ const Navbar = () => {
   const { contar } = useContext(ContextCart)
 
   return (
-    <nav className="flex flex-col  bg-blue-950 md:flex-row  md:justify-between   items-center px-8 py-4 text-white shadow-lg gap-4">
+    <nav data-aos="fade-right" className="flex flex-col  bg-blue-950 md:flex-row  md:justify-between   items-center px-8 py-4 text-white shadow-lg gap-4">
       
   <div className="flex items-center gap-2">
   <NavLink to="/" className="flex items-center gap-2">
@@ -27,7 +27,7 @@ const Navbar = () => {
 </div>
 
      
-      <ul className="flex flex-col text-amber-200 md:flex-row items-center gap-4 text-lg md:text-sm font-medium">
+      <ul data-aos="fade-left" className="flex flex-col text-amber-200 md:flex-row items-center gap-4 text-lg md:text-sm font-medium">
 
       
         <li className="hover:border-b border-white">

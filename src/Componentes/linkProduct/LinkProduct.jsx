@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom' 
 const LinkProduct = () => {
   return (
-    <div className="flex flex-col items-center text-amber-100 px-4 py-10">
+    <div data-aos="fade-down" className="flex flex-col items-center text-amber-100 px-4 py-10">
       
       <p className="text-lg text-center mb-1">
         Para ver las nuestras en stock.

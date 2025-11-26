@@ -16,8 +16,19 @@ import { ItemDetailContainer } from './Componentes/Productos/ItemDetailContainer
 import { Login } from './Componentes/Login/Login.jsx';
 import { RutaProtegida } from './Componentes/RutaProtegida/RutaProtegida';
 import { ProductFormContainer } from './Componentes/adminComponents/ProductFormContainer/ProductFormContainer';
+import AOS from "aos";
+import { useEffect } from 'react';
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(() => {
+   
+
+    AOS.init({
+      duration:  1000,
+      once: true,
+    });
+  }, []);
   return (
     <BrowserRouter>
       <AuthProvider>

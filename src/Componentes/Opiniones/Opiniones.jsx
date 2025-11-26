@@ -17,7 +17,7 @@ const Opiniones = () => {
   }
 
   return (
-    <div className="text-center items-center text-white p-8 ">
+    <div  data-aos="fade-down"className="text-center items-center text-white p-8 ">
       <h2 className=" text-1xl md:text-3xl md:font-bold md:mb-8">Comentarios de nuestros compradores</h2>
 
       <div className="max-w-3xl mx-auto">
