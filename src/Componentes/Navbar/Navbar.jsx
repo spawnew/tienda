@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import Captura from '../../Assets/Captura.jpg'
+import Captura from '../../assets/Captura.JPG'
 import { NavLink } from 'react-router-dom'
 
 
