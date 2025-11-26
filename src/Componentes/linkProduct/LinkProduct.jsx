@@ -31,7 +31,7 @@ const LinkProduct = () => {
         </a>
 
         <p className="text-amber-300 italic mt-3 text-center">
-          "El poder del duelo está en tus manos."
+          "Cree en el corazon de las cartas ."
         </p>
       </div>
 
