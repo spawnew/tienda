@@ -15,7 +15,7 @@ const Carrito = () => {
         <h2 className='text-amber-50'>El carrito está vacío</h2>
       ) : (
         cart.map((item) => (
-          <div className='text-amber-300 w-60 justify-around  p-1  flex flex-col m-3 bg-gray-600 w-100% ' key={item.id}>
+          <div className='text-amber-300 w-60 justify-around  p-1  flex flex-col m-3 ' key={item.id}>
             <div className='flex flex-col md:flex-row '><h2>{item.name}</h2>
             <p className='p-1'>Cantidad: {item.cantidad}</p>
               <p>Precio  ${(item.price) * Number(item.cantidad)}</p>
