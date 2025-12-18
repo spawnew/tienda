@@ -7,7 +7,7 @@ const LinkProduct = () => {
       <p className="text-lg text-center mb-1">
         Para ver las nuestras en stock.
       </p>
-      <Link to="/producto" className="mb-4">
+      <Link to="/producto" className="mb-4 text-2xl text-amber-300">
         <button>Ir a productos </button>
         </Link>
       <p className="text-lg text-center mb-6">

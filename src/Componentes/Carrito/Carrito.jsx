@@ -9,20 +9,23 @@ const Carrito = () => {
   
    console.log(cart)
    return (
-    <div className='flex flex-col   min-h-screen items-center text-gray-950  p-4'>
+    <div className='flex flex-col    min-h-screen items-center text-gray-950  p-4'>
      
        {cart.length === 0 ? (
         <h2 className='text-amber-50'>El carrito está vacío</h2>
       ) : (
-        cart.map((item) => (
-          <div className='text-amber-300 w-60 justify-around  p-1  flex flex-col m-3 ' key={item.id}>
-            <div className='flex flex-col md:flex-row '><h2>{item.name}</h2>
-            <p className='p-1'>Cantidad: {item.cantidad}</p>
+           cart.map((item) => (
+          
+          <div className='text-amber-300  w-60 md:min-w-screen m-2  justify-around items-center   flex flex-col  ' key={item.id}>
+            <div className='flex flex-col md:flex-row  '>
+              <h2 className='pr-3'>{item.name}</h2>
+            <p className='pr-3'>Cant: {item.cantidad}</p>
               <p>Precio  ${(item.price) * Number(item.cantidad)}</p>
             
             </div>
             
-          </div>
+               </div>
+              
         ))
            
        )}
