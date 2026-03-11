@@ -14,7 +14,7 @@ export const ItemDetail = ({ detail }) => {
             <Item {...detail}>
                 
                 <button 
-                    className="bg-blue-800 font-bold text-amber-200 p-1 rounded hover:border-amber-200 hover:border-2"
+                    className="bg-blue-950 font-bold text-amber-200 p-1 rounded hover:border-amber-200 hover:border-2"
                     onClick={() => agregar(detail)}>Agregar al carrito</button>   
            
             </Item> 

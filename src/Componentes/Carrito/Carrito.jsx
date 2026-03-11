@@ -32,10 +32,10 @@ const Carrito = () => {
        
        <p className='font-extrabold text-amber-100 '>Total a pagar: $ {cart.reduce((acc, p) => acc + p.price * p.cantidad, 0)}</p>
        <div className='flex gap-4'> 
-       <button className="bg-blue-800 font-bold text-amber-200 p-1 rounded hover:border-amber-200 hover:border-2"
+       <button className="bg-blue-950 font-bold text-amber-200 p-1 rounded hover:border-amber-200 hover:border-2"
          onClick={() => deleteCart()}>Vaciar Carrito</button>
        <Link to="/">
-         <button className="bg-blue-800 font-bold text-amber-200 p-1 rounded hover:border-amber-200 hover:border-2"
+         <button className="bg-blue-950 font-bold text-amber-200 p-1 rounded hover:border-amber-200 hover:border-2"
            onClick={() => comprar() }>Comprar</button>
         </Link>
        </div>
