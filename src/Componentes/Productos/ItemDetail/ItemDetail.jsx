@@ -9,7 +9,7 @@ export const ItemDetail = ({ detail }) => {
 
     return (
 
-<div>
+<div className=" flex justify-center flex-col items-center">
         
             <Item {...detail}>
                 
